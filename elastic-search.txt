@@ -1,0 +1,33 @@
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$ Index - products $$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+***************************
+******* GET REQUEST *******
+***************************
+
+(((((((((((((( curl -X "GET" ))))))))))))))
+
+======== List All Index Names
+http://localhost:9200/_cat/indices
+
+======== List All Data in particular Index
+http://localhost:9200/index_name/_search?pretty=true
+
+Ex:- http://localhost:9200/products/_search?pretty=true
+
+======== Fetch Particular Document from an index
+http://localhost:9200/products/_doc/OiBbeW8BwuxDsi7oomCH?pretty=true
+
+
+
+****************************
+******* DELETE REQUEST *******
+****************************
+
+(((((((((((((( curl -x "DELETE" ))))))))))))))
+
+======== Delete an document from index
+http://localhost:9200/products/_doc/OiBbeW8BwuxDsi7oomCH?pretty=true
